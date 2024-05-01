@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Intranet</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Infographie interactive</title>
+     <!-- Inclure Chart.js -->
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/esaip_educ.png" alt="Logo de l'entreprise">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="projet.html">Accueil</a></li>
+                <li><a href="temoignages.html">Temoignages</a></li>
+                <li><a href="sensibilisation.html">Sensibilisation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="introduction">
+    <div class="container">
+        <img src="images/risq3.jpg" alt="">
+      <h1>Bienvenue sur notre page d'information sur les Risques Psychosociaux à l'Esaip</h1>
+      <p>Cher(e)s collaborateur(trice)s et étudiant(e)s,</p>
+    
+        <section>
+            <p>Nous sommes ravis de vous accueillir sur cette plateforme dédiée à la sensibilisation et à la prévention des Risques Psychosociaux (RPS) à l'Esaip. À l'Esaip, nous attachons une grande importance au bien-être de nos collaborateurs et étudiants. C'est pourquoi nous avons initié cette démarche visant à informer, sensibiliser et prévenir les risques associés au stress, à la charge de travail excessive, au harcèlement, à la violence psychologique, et à d'autres éléments contribuant aux RPS.</p>
+            <p>Sur cette plateforme, vous trouverez des ressources, des outils et des conseils pour identifier, comprendre et gérer les risques psychosociaux. Nous vous encourageons à explorer ces informations, à participer aux formations et aux sessions de sensibilisation organisées par notre équipe dédiée à la santé et à la sécurité au travail. Ensemble, nous pouvons créer un environnement de travail sain, respectueux et épanouissant pour chacun.</p>
+        </section>
+
+        <section>
+            <h2>Notre plateforme</h2>
+            <p>Notre plateforme a été conçue pour offrir à nos employés/étudiants un espace centralisé où ils peuvent accéder à toutes les informations importantes relatives à notre entreprise/école. De la communication interne à l'accès aux ressources et aux outils, notre intranet vise à faciliter la collaboration, à améliorer la productivité et à renforcer la culture organisationnelle.</p>
+            <p> Public cible : Notre plate s'adresse principalement à nos employés/étudiants, ainsi qu'à toute personne affiliée à notre entreprise/école, incluant les membres du personnel, les départements, les équipes de projet, les étudiants, les professeurs et le personnel administratif. N'hésitez pas à nous contacter si vous avez des questions, des préoccupations ou des suggestions concernant la prévention des Risques Psychosociaux à l'Esaip.</p>
+        </section>
+
+        <h2>Fonctionnalités principales :</h2>
+        <ul>
+            <li>
+                <section class="company-info">
+                    <h3>Informations sur l'ESAIP</h3>
+                    <p>Découvrez les dernières annonces, politiques et procédures de l'Esaip pour favoriser un environnement de travail sain et inclusif.</p>
+                </section>
+            </li>
+            <li>
+                <section class="internal-communication">
+                    <h3>Outils de communication interne</h3>
+                    <p>Utilisez nos messageries instantanées, forums de discussion et commentaires sur les publications pour faciliter la communication et le soutien entre les membres de notre communauté.</p>
+                </section>
+            </li>
+            <li>
+                <section class="shared-resources">
+                    <h3>Ressources partagées</h3>
+                    <p>Explorez nos documents, présentations, vidéos de formation et guides pratiques pour renforcer vos compétences et promouvoir le bien-être au sein de l'Esaip.</p>
+                </section>
+            </li>
+            <li>
+                <section class="event-calendar">
+                    <h3>Calendriers d'événements et formulaires de partage d'idées</h3>
+                    <p>Consultez nos calendriers d'événements pour rester informé des activités et initiatives de l'Esaip, et utilisez nos formulaires de partage d'idées pour partager vos idées sur les activités à mettre en place dans le cadre de la sensibilisation sur les risques psychosociaux.</p>
+                </section>
+            </li>
+        </ul>
+
+        <p>Merci pour votre engagement envers la santé et le bien-être de notre communauté.</p>
+    </div>
+</section>
+
+
+
+<div class="carousel">
+<div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="images/risque3.jpg" alt="risque3.jpg">
+    </div>
+    <div class="carousel-item">
+        <img src="images/risque2.jpg" alt="Slide 2">
+    </div>
+    <div class="carousel-item">
+        <img src="images/formation2.jpg" alt="Slide 3">
+    </div>
+</div>
+</div>
+
+<div>
+  <section id="sensibilisation">
+          <h2>Infographie des risques psychosociaux en 2024 à l'Esaip</h2>
+          <div id="infographic-container">
+              <!-- Conteneur pour l'infographie -->
+              <canvas id="myChart"></canvas>
+          </div>
+  </section>
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          // Données pour l'infographie (exemple)
+          const data = {
+              labels: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Aout', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
+              datasets: [{
+                  label: 'Victimes',
+                  data: [38, 47, 70, 81],
+                  backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                  borderColor: 'rgba(75, 192, 192, 1)',
+                  borderWidth: 1
+              }]
+          };
+
+          // Options de l'infographie
+          const options = {
+              scales: {
+                  y: {
+                      beginAtZero: true
+                  }
+              }
+          };
+
+          // Création de l'infographie avec Chart.js
+          const ctx = document.getElementById('myChart').getContext('2d');
+          const myChart = new Chart(ctx, {
+              type: 'bar',
+              data: data,
+              options: options
+          });
+      });
+  </script>
+
+  <script>
+      // Récupérer les données depuis l'API APOD de la NASA
+      fetch('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
+      .then(response => response.json())
+      .then(data => {
+          // Manipulation des données récupérées
+          const latestNewsSection = document.getElementById('latest-news');
+          const newsContainer = latestNewsSection.querySelector('.container');
+
+          // Création des éléments HTML pour afficher les détails de l'image astronomique du jour
+          const newsArticle = document.createElement('article');
+          const newsTitle = document.createElement('h3');
+          const newsContent = document.createElement('p');
+          const newsImage = document.createElement('img');
+
+          // Remplir les éléments HTML avec les données récupérées
+          newsTitle.textContent = data.title;
+          newsContent.textContent = data.explanation;
+          newsImage.src = data.url;
+          newsImage.alt = data.title;
+
+          // Ajouter les éléments HTML à la section latest-news
+          newsArticle.appendChild(newsTitle);
+          newsArticle.appendChild(newsImage);
+          newsArticle.appendChild(newsContent);
+          newsContainer.appendChild(newsArticle);
+      })
+      .catch(error => console.error('Erreur lors de la récupération des données :', error));
+  </script>
+
+
+  <div class="flex-container">
+    <section id="upcoming-events">
+        <div class="container">
+            <h2>Événements à Venir</h2>
+            <!-- Contenu des événements à ajouter dynamiquement ici -->
+        </div>
+    </section>
+    <section id="other-section">
+        <div class="container">
+            <h2>Autre Section</h2>
+            <!-- Contenu de l'autre section à ajouter dynamiquement ici -->
+        </div>
+    </section>
+
+</div>
+
+<section id="useful-resources">
+    <div class="container">
+        <h2>Ressources Utiles</h2>
+        <!-- Contenu des ressources à ajouter dynamiquement ici -->
+    </div>
+    <div class="latest-news" id="latest-news">
+    <div class="container">
+        <!-- Contenu des actualités à ajouter dynamiquement ici -->
+    </div>
+    </div>
+
+</section>
+
+
+</div>
+<footer>
+    <div class="footer-column">
+        <p>Travailler,</p>
+        <p>Mieux,</p>
+        <p>Ensemble !</p>
+    </div>
+
+    <div class="footer-column">
+        <p><a href="/fr?page_id=2016">Mentions Légales</a></p>
+        <p><a href="/fr?page_id=2007">Conditions Générales</a></p>
+        <p><a href="/fr?page_id=3">Confidentialité</a></p>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,394 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#introduction {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+#introduction .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.flex-container {
+    display: flex;
+}
+
+section {
+    flex: 1;
+    margin-right: 20px; /* Espace entre les sections */
+}
+
+#useful-resources {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+}
+
+#useful-resources .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo img {
+    height: 50px; /* Ajustez la taille de votre logo selon vos besoins */
+    width: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border: 1px solid transparent;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-color: #fff;
+}
+
+nav ul li.active a {
+    background-color: #555;
+    border-color: #fff;
+}
+
+/* Style de la section des articles de blog */
+.blog-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.blog-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Style des articles de blog */
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.blog-post {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+}
+
+.blog-post h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #0056b3;
+}
+
+/* Styles pour le corps, les titres et les tableaux */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Styles pour les carrousels */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Ajustez la hauteur selon vos besoins */
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-item.active {
+    opacity: 1;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Styles pour la section Témoignages */
+.testimonials {
+    margin-top: 20px;
+    text-align: center; /* Centrer le contenu */
+}
+
+.testimonial {
+    display: inline-block; /* Permet d'aligner les témoignages horizontalement */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    max-width: 400px; /* Ajustez la largeur maximale selon vos besoins */
+}
+
+.testimonial img {
+    width: 150px; /* Ajustez la taille de l'image selon vos besoins */
+    height: 150px; /* Ajustez la taille de l'image selon vos besoins */
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 0;
+}
+
+/* Styles CSS pour l'infographie */
+#infographic-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+canvas {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.latest-news {
+    background-color: #f9f9f9; /* Couleur de fond */
+    padding: 20px; /* Espacement intérieur */
+    border-radius: 10px; /* Bordures arrondies */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre */
+    margin-bottom: 30px; /* Espace en bas pour séparer visuellement les sections */
+}
+
+.latest-news .container {
+    max-width: 800px; /* Largeur maximale du contenu */
+    margin: 0 auto; /* Centrer le contenu */
+}
+
+.latest-news h3 {
+    font-size: 1.5rem; /* Taille de la police pour les titres */
+    margin-bottom: 15px; /* Espacement en bas des titres */
+}
+
+.latest-news p {
+    font-size: 1rem; /* Taille de la police pour le contenu */
+    line-height: 1.6; /* Hauteur de ligne pour une meilleure lisibilité */
+    color: #555; /* Couleur du texte */
+}
+
+.latest-news img {
+    max-width: 50%; /* L'image s'ajustera automatiquement à la largeur du conteneur */
+    height:50%; /* Hauteur automatique pour maintenir le ratio d'aspect */
+    display: block; /* Pour éviter les espaces vides sous l'image */
+    margin-bottom: 15px; /* Espacement en bas de l'image */
+}
+
+/* Styles CSS pour la section de présentation */
+.intro-section {
+    background-image: url('images/risq5.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.intro-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.intro-section p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.intro-section1 a {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.intro-section a:hover {
+    background-color: #cc5200;
+}
+
+/* Styles pour les icônes de formulaire */
+.form-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.input-group input {
+    width: calc(100% - 30px); /* Réserve de l'espace pour l'icône */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    /* Assurez-vous que l'icône est alignée correctement à gauche */
+    padding-left: 30px; /* Ajustez la valeur en fonction de la largeur de l'icône */
+    background-image: url('chemin/vers/votre/check.svg'); /* Chemin de l'icône */
+    background-repeat: no-repeat;
+    background-position: 10px center; /* Position de l'icône */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.account-form {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.account-form h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.intro-section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh; /* Ajustez la hauteur selon vos besoins */
+}
+
+.intro-section1 a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.intro-section1 a:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alignement au sommet */
+}
+
+.footer-column {
+    margin-right: 20px; /* Espacement entre les colonnes */
+}
+
+.footer-column p {
+    margin: 0; /* Supprimer les marges par défaut des paragraphes */
+}
+
+.footer-column a {
+    color: #555;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: #007bff;
+}

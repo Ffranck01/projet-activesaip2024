@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Intranet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/esaip_educ.png" alt="Logo de l'entreprise">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="projet.html">Accueil </a></li>
+                <li><a href="temoignages.html">Temoignages</a></li>
+                <li><a href="sensibilisation.html">Sensibilisation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+      <form id="connexion-form" class="account-form">
+          <h2>Connexion</h2>
+          <div class="input-group">
+              <label for="connexion-username">Nom d'utilisateur</label>
+              <input type="text" id="connexion-username" placeholder="Entrez votre nom d'utilisateur">
+          </div>
+          <div class="input-group">
+              <label for="connexion-password">Mot de passe</label>
+              <input type="password" id="connexion-password" placeholder="Entrez votre mot de passe">
+          </div>
+          <button type="submit">Connexion</button>
+      </form>
+        <form id="creation-compte-form" class="account-form">
+            <h2>Créer un compte</h2>
+            <div class="input-group">
+                <label for="creation-username">Nom d'utilisateur</label>
+                <input type="text" id="creation-username" placeholder="Entrez votre nom d'utilisateur">
+            </div>
+            <div class="input-group">
+                <label for="creation-email">Adresse email</label>
+                <input type="email" id="creation-email" placeholder="Entrez votre adresse email">
+            </div>
+            <div class="input-group">
+                <label for="creation-password">Mot de passe</label>
+                <input type="password" id="creation-password" placeholder="Entrez votre mot de passe">
+            </div>
+            <div class="input-group">
+                <label for="creation-confirm-password">Confirmez le mot de passe</label>
+                <input type="password" id="creation-confirm-password" placeholder="Confirmez votre mot de passe">
+            </div>
+            <button type="submit">Créer le compte</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-column">
+            <p>Travailler,</p>
+            <p>Mieux,</p>
+            <p>Ensemble !</p>
+        </div>
+
+        <div class="footer-column">
+            <p><a href="/fr?page_id=2016">Mentions Légales</a></p>
+            <p><a href="/fr?page_id=2007">Conditions Générales</a></p>
+            <p><a href="/fr?page_id=3">Confidentialité</a></p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

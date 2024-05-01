@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Intranet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/esaip_educ.png" alt="Logo de l'entreprise">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="projet.html">Accueil</a></li>
+                <li><a href="temoignages.html">Temoignages</a></li>
+                <li><a href="sensibilisation.html">Sensibilisation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="intro-section">
+        <h1>Sensibilisation et Prévention des Risques Psychosociaux à l'Esaip</h1>
+        <p>Notre école s'engage à sensibiliser et à soutenir ses employés face aux risques psychosociaux. Contactez-nous pour obtenir de l'aide et des ressources.</p>
+    </section>
+
+    <section class="blog-section">
+
+        <h2>Articles de Blog sur les Risques Psychosociaux</h2>
+        <div class="blog-posts">
+            <article class="blog-post">
+                <h3>Comprendre les Risques Psychosociaux</h3>
+                <p>
+                    Les risques psychosociaux (RPS) sont des éléments du travail qui portent atteinte à la santé mentale, à la motivation ou à la satisfaction au travail de tout le monde.
+                    Cet article explore en profondeur ce que sont les RPS et pourquoi ils sont importants à comprendre.
+                </p>
+                <a href="https://travail-emploi.gouv.fr/sante-au-travail/prevention-des-risques-pour-la-sante-au-travail/article/risques-psychosociaux" class="read-more">Lire l'article</a>
+            </article>
+            <article class="blog-post">
+                <h3>Comment Reconnaître les Signes de Stress au Travail</h3>
+                <p>
+                    Le stress au travail comme à l'école est l'un des principaux risques psychosociaux auxquels les individus sont confrontés. Cet article examine les signes courants de stress au travail
+                    et offre des conseils sur la façon de les reconnaître et de les gérer efficacement.
+                </p>
+                <a href="https://www.qare.fr/sante/stress/travail/" class="read-more">Lire l'article</a>
+            </article>
+            <article class="blog-post">
+                <h3>Les Effets du Harcèlement Moral sur la Santé Mentale</h3>
+                <p>
+                    Le harcèlement moral au travail peut avoir des conséquences dévastatrices sur la santé mentale des employés. Cet article examine les effets psychologiques du harcèlement moral
+                    et propose des conseils sur la façon de reconnaître et de traiter cette forme de violence au travail.
+                </p>
+                <a href="https://harcelement.uqam.ca/harcelement/consequences-du-harcelement-psychologique/" class="read-more">Lire l'article</a>
+            </article>
+
+            <article class="blog-post">
+                <h3>Stratégies pour Réduire le Stress au Travail</h3>
+                <p>
+                    La réduction du stress au travail est essentielle pour promouvoir le bien-être des employés et prévenir les risques psychosociaux. Cet article explore diverses stratégies et techniques
+                    pour aider les individus à gérer efficacement leur stress et à maintenir un environnement de travail sain.
+                </p>
+                <a href="https://conseils-astuces-rh.fr/gestion-du-stress-au-travail/" class="read-more">Lire l'article</a>
+            </article>
+
+            <article class="blog-post">
+                <h3>Impact de la Charge de Travail sur l'Équilibre Vie Professionnelle-Vie Personnelle</h3>
+                <p>
+                    Une charge de travail excessive peut perturber l'équilibre entre vie professionnelle et vie personnelle, ce qui peut conduire à des problèmes de santé mentale et à des risques psychosociaux.
+                    Cet article examine comment la gestion de la charge de travail peut contribuer à maintenir un équilibre sain entre vie professionnelle et vie personnelle.
+                </p>
+                <a href="https://www.cairn.info/revue-agrh1-2013-1-page-91.htm" class="read-more">Lire l'article</a>
+            </article>
+
+            <article class="blog-post">
+                <h3>L'Importance de la Communication dans la Prévention des Risques Psychosociaux</h3>
+                <p>
+                    La communication efficace est un élément crucial dans la prévention des risques psychosociaux sur le lieu de travail. Cet article explore l'importance de la communication ouverte et transparente
+                    dans la création d'un environnement de travail sain et inclusif pour tous les employés.
+                </p>
+                <a href="https://link.springer.com/chapter/10.1007/978-2-287-33281-4_3" class="read-more">Lire l'article</a>
+            </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <img src="images/risq2.jpg" alt="Prévention des risques psycho-sociaux">
+            <h1>Quiz sur les risques psychosociaux</h1>
+            <div id="question1" class="question">
+                <h2>Question 1: Quel est l'effet de la surcharge de travail sur la santé mentale des étudiants ?</h2>
+                <input type="radio" name="q1" value="a"> a) Augmentation du stress et de l'anxiété<br>
+                <input type="radio" name="q1" value="b"> b) Diminution de la productivité<br>
+                <input type="radio" name="q1" value="c"> c) Amélioration de la concentration<br>
+                <input type="radio" name="q1" value="d"> d) Réduction des risques psychosociaux<br>
+                <button onclick="checkAnswer(1)">Valider</button>
+                <p id="answer1" class="answer"></p>
+            </div>
+
+            <div id="question2" class="question">
+                <h2>Question 2: Vrai ou Faux - Le manque de sommeil n'a pas d'impact significatif sur la santé mentale des individus.</h2>
+                <input type="radio" name="q2" value="true"> Vrai<br>
+                <input type="radio" name="q2" value="false"> Faux<br>
+                <button onclick="checkAnswer(2)">Valider</button>
+                <p id="answer2" class="answer"></p>
+            </div>
+
+            <div id="question3" class="question">
+                <h2>Question 3: Associez le risque psychosocial à sa description.</h2>
+                Risque psychosocial :
+                <ol>
+                    <li><input type="radio" name="q3" value="b"> Isolement social</li>
+                    <li><input type="radio" name="q3" value="c"> Pression académique</li>
+                    <li><input type="radio" name="q3" value="a"> Conflits interpersonnels</li>
+                </ol>
+                Description :
+                <ol>
+                    <li>A. Tensions et conflits avec d'autres personnes.</li>
+                    <li>B. Difficulté à se connecter avec les autres et sentiment de solitude.</li>
+                    <li>C. Sentiment d'être submergé par les attentes académiques.</li>
+                </ol>
+                <button onclick="checkAnswer(3)">Valider</button>
+                <p id="answer3" class="answer"></p>
+            </div>
+
+            <div id="question4" class="question">
+                <h2>Question 4: Classez les étapes suivantes pour gérer le stress efficacement, de la plus importante à la moins importante.</h2>
+                <input type="radio" name="q4" value="a"> a) Identifier les sources de stress<br>
+                <input type="radio" name="q4" value="b"> b) Adopter des techniques de relaxation<br>
+                <input type="radio" name="q4" value="c"> c) Communiquer ses sentiments et demander de l'aide<br>
+                <input type="radio" name="q4" value="d"> d) Établir des priorités et planifier son temps<br>
+                <button onclick="checkAnswer(4)">Valider</button>
+                <p id="answer4" class="answer"></p>
+            </div>
+
+            <div id="question5" class="question">
+                <h2>Question 5: Quels sont quelques signes courants de stress chez les étudiants universitaires et comment peuvent-ils être gérés ?</h2>
+                <textarea id="q5answer" rows="4" cols="50"></textarea><br>
+                <button onclick="checkAnswer(5)">Valider</button>
+                <p id="answer5" class="answer"></p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="awareness">
+        <h2>Ressources pour accroitre la sensibilisation</h2>
+        <p>Ici vous pouvez trouver des informations et des ressources pour accroître la sensibilisation sur divers sujets importants pour notre entreprise comme à l'école.</p>
+        <iframe width="770" height="433" src="https://www.youtube.com/embed/jIcC33MPLNo" title="Gestion du stress au travail : comment faire ?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="770" height="433" src="https://www.youtube.com/embed/LqiSpVaVZng" title="Webinaire 10 idées d&#39;actions pour réussir votre Safety Day" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="770" height="433" src="https://www.youtube.com/embed/DdMyObr6N1s" title="PsyCARE, la série qui explique....comment gérer son stress" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+
+    <section class="intro-section1">
+    <a href="mailto:pdelanoe@esaip.org">Contactez-nous</a>
+    </section>
+
+    <footer>
+        <div class="footer-column">
+            <p>Travailler,</p>
+            <p>Mieux,</p>
+            <p>Ensemble !</p>
+        </div>
+
+        <div class="footer-column">
+            <p><a href="/fr?page_id=2016">Mentions Légales</a></p>
+            <p><a href="/fr?page_id=2007">Conditions Générales</a></p>
+            <p><a href="/fr?page_id=3">Confidentialité</a></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
